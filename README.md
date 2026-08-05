@@ -1,4 +1,4 @@
-Modern Data Warehouse & Analytics Project
+# Modern Data Warehouse & Analytics Project
 
 Welcome to the Modern Data Warehouse & Analytics Project repository! 🚀
 
@@ -7,11 +7,13 @@ This project demonstrates an end-to-end data warehousing solution built using SQ
 
 
 
-🏛️ Solution Architecture
+## Solution Architecture
+
+![Architecture Diagram](https://github.com/deepakydv26/Data_warehouse_project/blob/main/docs/HL_DWH_ARC.png)
 
 The project is designed using the Medallion Architecture, which organizes data into three logical layers for better scalability, maintainability, and analytics performance.
 
-🥉 Bronze Layer – Raw Data
+### 1. Bronze Layer – Raw Data
 
 The Bronze layer serves as the landing zone for source data.
 
@@ -28,7 +30,8 @@ Stored in SQL Server tables
 No transformations applied
 Batch loading process
 Supports full refresh using Truncate & Insert
-🥈 Silver Layer – Cleansed Data
+
+### 2. Silver Layer – Cleansed Data
 
 The Silver layer prepares data for analytics by improving quality and consistency.
 
@@ -44,7 +47,7 @@ Missing value treatment
 
 The result is a clean and reliable dataset ready for business modeling.
 
-🥇 Gold Layer – Business Data
+### 3. Gold Layer – Business Data
 
 The Gold layer contains analytical models optimized for reporting and decision-making.
 
@@ -59,7 +62,7 @@ Performance optimization for analytical queries
 
 This layer acts as the single source of truth for reporting and dashboards.
 
-📖 Project Overview
+## Project Overview
 
 This repository demonstrates the complete lifecycle of building a modern analytics platform.
 
@@ -72,7 +75,8 @@ Performing data cleansing and transformation
 Creating dimensional models using Star Schema
 Writing SQL queries for business analysis
 Generating insights for reporting and decision-making
-🎯 Skills Demonstrated
+
+## Skills Demonstrated
 
 This project highlights practical experience in:
 
@@ -87,22 +91,28 @@ Business Intelligence
 Analytics Engineering
 SQL Performance Optimization
 Reporting & Dashboard Preparation
-🛠️ Technology Stack
-Category	Tools
-Database	SQL Server Express
-Query Tool	SQL Server Management Studio (SSMS)
-Source Data	CSV Files
-Version Control	Git & GitHub
-Diagramming	Draw.io
-Documentation	Markdown
-Knowledge Management	Notion
-🚀 Project Objectives
-Data Engineering
-Goal
+
+## Technology Stack
+
+| Category | Technology |
+|----------|------------|
+| Database | SQL Server Express |
+| Query Tool | SQL Server Management Studio (SSMS) |
+| Programming Language | SQL |
+| Data Source | CSV Files |
+| Version Control | Git & GitHub |
+| Documentation | Markdown |
+| Diagramming | Draw.io |
+| Project Management | Notion |
+
+## Project Objectives
+
+### Data Engineering
+#### Goal
 
 Build a centralized data warehouse that consolidates sales information from multiple operational systems into a unified analytical database.
 
-Functional Requirements
+#### Functional Requirements
 Import ERP and CRM datasets from CSV files
 Perform data quality validation
 Clean and standardize raw data
@@ -110,8 +120,9 @@ Integrate datasets into a unified warehouse
 Design an analytical data model
 Maintain clear technical documentation
 Focus only on the latest available dataset (no historical tracking)
-Data Analytics
-Goal
+
+### Data Analytics
+#### Goal
 
 Develop SQL-based analytical solutions that generate meaningful business insights.
 
